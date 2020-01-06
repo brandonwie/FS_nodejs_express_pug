@@ -6,6 +6,7 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use("/static", express.static("public"));
 
 app.set("view engine", "pug");
 // ./routes => default index.js
@@ -24,7 +25,7 @@ app.use((req, res, next) => {
 app.use((err, req, res, next) => {
   res.locals.error = err;
   res.status(err.status);
-  res.render("error", err);
+  res.render("error");
 });
 
 app.listen(3000, () => {
