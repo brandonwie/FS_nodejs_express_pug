@@ -14,16 +14,18 @@ OS X & Linux:
 
 ```sh
 $ npm install
+$ nodemon #runs live local server
 ```
 
 ## Release History
 
 - 0.1.2
-  - add /public (static assets)
-  - fix minor bugs
+  - The first proper release
+  - CHANGE: add /public (static assets)
+  - FIX: minor bugs (button overlay)
 - 0.1.1
-  - Removed: footer
-  - Errors: hint button, style layout
+  - CHANGE: Remove footer
+  - FIXED: minor style layouts
 - 0.1.0
   - Complete basic functionality
   - Set up routes folder (index, cards)
